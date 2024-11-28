@@ -1,0 +1,47 @@
+<html>
+   <body> 
+	  <input type="text" onKeyUp="a();" id="demo" value="A"><br> 
+      <span id='dtxt'></span>
+      <script type = "text/javascript">
+	  var grade = 'A';
+	  function a (){
+		  var ab = document.getElementById('demo').value;
+		  setTimeout(function(){ 
+		  var grade = ab.toUpperCase();
+		  	sfun(grade);
+		   }, 0);		  
+	  }
+         
+            
+			
+			function sfun(grade){
+            switch(grade) {
+               case 'A': 
+			   document.getElementById('dtxt').innerHTML = 'Good Job';
+               break;
+            
+               case 'B': 
+			   document.getElementById('dtxt').innerHTML = 'Pretty Good';
+               break;
+            
+               case 'C': 
+			   document.getElementById('dtxt').innerHTML = 'Passed';
+               break;
+            
+               case 'D': 
+			   document.getElementById('dtxt').innerHTML = 'Not so good';
+               break;
+            
+               case 'F': 
+			   document.getElementById('dtxt').innerHTML = 'Failed';
+               break;
+            
+               default:  
+			   document.getElementById('dtxt').innerHTML = 'Unknown Grade';
+            }
+			}
+			sfun(grade);
+         
+      </script>
+   </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        html{scroll-behavior: smooth;}
+    </style>
+</head>
+<body>
+<p id="demo" style="height: 100px;background:#ccc;"></p>
+    
+<!--
+<script src="jquery-2.2.4.min.js"></script>   
+<script>
+$(document).ready(function(){
+    /*$("#demo").on("click", function(){
+        $(this).hide();
+    });*/
+    /*$("#demo").mouseenter(function(){
+        $(this).css("background", "red");
+    });*/
+    
+    
+    $("#demo").on({
+        dblclick: function(){
+            $(this).hide();
+        },
+        mouseenter: function(){
+            $(this).animate({
+                opacity: '0.5',
+                height: '150px',
+                width: '150px',
+                background: 'red'
+              }, "fast");
+        }
+    });
+});
+
+
+/*var children = document.getElementById("demo").children;
+var totalWidth = 0;
+
+for (var i = 0; i < children.length; i++) {
+    totalWidth += children[i].offsetWidth;
+}
+console.log("Total Width = " + totalWidth);
+*/
+</script>
+-->
+
+</body>
+</html>
